@@ -6,6 +6,48 @@
   <title>Формы</title>
 </head>
 <body>
-  
+  <form action="test.com" method="post">
+    <label>Обычная строка текста:<input type="text" placeholder="Введите текст"></label>
+    <br>
+    <label>Поле для email:<input type="email" placeholder="Ваш email"></label>
+    <br>
+    <label>Поле для номера телефона:<input type="tel" placeholder="Ваш номер телефона"></label>
+    <br>
+    <label>Пароль:<input type="password" placeholder="Введите пароль"></label>
+    <br>
+    <label>Число:<input type="number" placeholder="Введите любое число"></label>
+    <br>
+    <label>Поиск:<input type="search" placeholder="Поиск"></label>
+    <br>
+    <label>Кнопка-изображение:<input type="image" src="https://parspng.com/wp-content/uploads/2023/01/catpng.parspng.com-6.png" alt="cat tapping the monitor with his paw" width="100"></label>
+    <br>
+    <label>Дата:<input type="date"></label>
+    <br>
+    <input type="file">
+    <br>
+    <label>Большой текст:<textarea cols="15" rows="5" placeholder="Начите вводить..."></textarea></label>
+    <br>
+    <select size="3">
+      <option>Вариант 1</option>
+      <option>Вариант 2</option>
+      <option>Вариант 3</option>
+      <option>Вариант 4</option>
+    </select>
+    <br>
+    <input id="kindness" type="checkbox" name="character"><label for="kindness">Доброта</label>
+    <br>
+    <input id="loyalty" type="checkbox" name="character"><label for="loyalty">Преданность</label>
+    <br>
+    <label><input id="blue" type="radio" name="color" value="blue">Синий</label>
+    <br>
+    <label><input id="red" type="radio" name="color" value="red">Красный</label>
+    <br>
+    <label><input type="range"></label>
+    <br>
+    <label><input type="color"></label>
+    <br>
+    <input type="reset">
+    <input type="submit">
+  </form>
 </body>
 </html>
