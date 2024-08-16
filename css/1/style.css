@@ -1,0 +1,20 @@
+#main_title{                    
+    text-align:center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-1 .section__title{
+    text-decoration: underline;
+}
+
+p[data-text="lorem"]{
+    text-transform: capitalize;
+}
+
+span{
+    color: rgb(249, 52, 52);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
