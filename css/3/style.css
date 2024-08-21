@@ -1,0 +1,26 @@
+div{
+    background-color: aqua;
+    width: 500px;
+}
+
+h1{
+    background-color: blue;
+}
+
+ol{
+    background-color: blueviolet;
+}
+
+li{
+    background-color: pink;
+}
+
+span{
+    background-color: rgb(0, 255, 68);
+    padding: 15px;
+}
+
+em{
+    background-color: red;
+    margin-left: 15px;
+}
