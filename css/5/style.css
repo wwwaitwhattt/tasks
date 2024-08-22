@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(/css/5/Montserrat-Bold.woff2);
+}
+
+p{
+    font-family: "Roboto";
+}
+
+h1, h2{
+    font-family: "Montserrat-Bold", sans-serif;
+}
