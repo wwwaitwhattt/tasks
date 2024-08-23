@@ -1,0 +1,40 @@
+.main {
+  min-height: 100vh;
+}
+
+.section {
+  height: 100%;
+}
+
+.block {
+  height: 200px;
+  border: 1px solid #000000;
+}
+
+.block-1 {
+  background-color: #e8b2b2;
+}
+
+.block-2 {
+  background-color: #e8d4b2;
+}
+
+.block-3 {
+  background-color: #e7e8b2;
+}
+
+.block-4 {
+  background-color: #bce8b2;
+}
+
+.block-5 {
+  background-color: #b2e8e8;
+}
+
+.block-6 {
+  background-color: #b2bee8;
+}
+
+.block-7 {
+  background-color: #e7b2e8;
+}

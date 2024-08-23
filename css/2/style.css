@@ -1,0 +1,53 @@
+a:link{
+    color:black;
+}
+
+a:visited{
+    color:purple;
+}
+
+.div-1:not(a){
+    color:red;
+}
+
+/* - */
+
+button:hover{
+    background-color: aqua;
+}
+
+button:active{
+    background-color: blue;
+}
+
+button:disabled{
+    background-color: #ccc;
+}
+
+/* - */
+
+input:focus{
+    color: rgb(0, 140, 255);
+}
+
+input[type="text"]:invalid{
+    background-color: #fdd;
+}
+
+input[type="text"]:valid{
+    background-color: rgb(232, 255, 221);
+}
+
+input[type="text"]:disabled{
+    background-color: #ccc;
+}
+
+textarea:enabled{
+    background-color: rgb(227, 205, 96);
+}
+
+/* - */
+
+input[type="checkbox"]:checked{
+    margin-top: 50px;
+}
