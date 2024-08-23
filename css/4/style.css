@@ -1,0 +1,132 @@
+.box-static-1{
+    background-color: lightblue;
+    position: static;
+}
+
+.box-static-2{
+    background-color: lightcoral;
+}
+
+.box-static-3{
+    background-color: lightgreen;
+}
+
+.box-relative-1{
+    position: relative;
+    background-color: lightgreen;
+}
+
+.box-relative-2{
+    position: relative;
+    left: 20px;
+    top: 5px;
+    background-color: lightsalmon;
+}
+
+.box-relative-3{
+    position: relative;
+    background-color: rgb(238, 236, 144);
+    left: 30px;
+    top: -10px;
+}
+
+.box-absolute-1{
+    background-color: lightseagreen;
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+
+.box-absolute-2{
+    background-color: lightseagreen;
+    position: absolute;
+}
+
+.box-absolute-3{
+    position: absolute;
+    background-color: lightseagreen;
+    left: 100px;
+}
+
+.box-fixed-1{
+    position: fixed;
+    background-color: lightpink;
+    right: 10px;
+    bottom: 10px;
+}
+
+.box-sticky-1{
+    position: sticky;
+    background-color: lightslategray;
+    width: 150px;
+    height: 100px;
+    bottom: 10px;
+}
+
+.box-1,.box-2{
+    width: 200px;
+    height: 200px;
+}
+
+.box-1{
+    background-color: lightblue;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+    left: 10px;
+    top: -60px;
+}
+
+.box-3,.box-4{
+    width: 200px;
+    height: 200px;
+}
+
+.box-3{
+    background-color: lightblue;
+    position: relative;
+    z-index: 100;
+}
+
+.box-4{
+    background-color: lightgreen;
+    position: relative;
+    left: 10px;
+    top: -60px;
+}
+
+.box-5{
+    background-color: lightblue;
+    position: relative;
+    z-index: 100;
+    height: 100px;
+    width: 100px;
+}
+
+.box-6{
+    background-color: lightcoral;
+    position: relative;
+    left: 60px;
+    top: 60px;
+    height: 50px;
+    width: 50px;
+}
+
+.box-7{
+    background-color: rgb(203, 173, 230);
+    position: relative;
+    z-index: 200;
+    height: 100px;
+    width: 100px;
+}
+
+.box-8{
+    background-color: rgb(128, 240, 190);
+    position: relative;
+    left: 60px;
+    top: -20px;
+    height: 50px;
+    width: 50px;
+}
