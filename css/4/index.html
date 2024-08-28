@@ -7,8 +7,160 @@
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
+  <!-- В задаче нужно разобраться в свойстве position (css/4). Написать примеры (чем больше, тем лучше) добавив описательные коментарии
+
+значения: static, relative, absolute, fixed, sticky
+так же использовать свойства: top, right, bottom, left, z-index -->
   <main>
-    
+    <div class="section-1">
+      <div class="box-static-1">
+        position: static 1
+      </div>
+      <div class="box-static-2">
+        position: static 2
+      </div>
+      <div class="box-static-3">
+        position: static 3
+      </div>
+    </div>
+    <p>static - это значение position, которое задано элементу по умолчанию.
+      так что смысла у такого элемента заново прописывать в свойствах position:static - нет.
+      такие элементы в нормальном потоке располагаются в соответствии с их display значением (вертикально, если 
+      блочный, в строку, если строчный и т.д.)
+    </p>
+    <hr>
+    <div class="section-2" style="width: 310px;">
+      <div class="box-static-1">
+        position: static
+      </div>
+      <div class="box-relative-1">
+        position: relative (без параметров смещения)
+      </div>
+      <div class="box-relative-2">
+        position: relative
+      </div>
+      <div class="box-static-1">
+        position: static
+      </div>
+      <br>
+      <div class="box-static-1">
+        position: static
+      </div>
+      <div class="box-relative-3">
+        position: relative
+      </div>
+      <div class="box-static-1">
+        position: static
+      </div>
+    </div>
+    <p>при значении relative располагаться элементы будут так же, как и при static,
+      но к этим элементам можно применять свойства смещения, при этом не влияя на расположение
+      соседних элементов и на первоначальное расположение элемента в потоке
+    </p>
+    <hr>
+    <div class="section-3">
+      <div class="static-box">
+      <div class="box-static-1">
+        1. position: static
+      </div>
+      <div class="box-relative-1">
+        2. position: relative (без параметров смещения)
+      </div>
+      <div class="box-absolute-1">
+        3. position: absolute (section-3)
+      </div>
+      <div class="box-static-1">
+        4. position: static
+      </div>
+      <p>как мы можем заметить, элемент с position: absolute переместился далеко в section-1. 
+        это произошло потому что элементы с этим значением позиционируются относительно ближайшего
+        не-static элемента. т.к. текущему div не задано никакого свойства позиционирования - он static, 
+        и если не-static элемента в документе нет, то позиционируется относительно body. по ширине этот
+        элемент занимает не всю строку, а столько места, сколько надо.
+      </p>
+      </div>
+      <div class="non-static-box" style="position: relative;">
+        <div class="box-static-1">
+          1. position: static
+        </div>
+        <div class="box-relative-1">
+          2. position: relative (без параметров смещения)
+        </div>
+        <div class="box-absolute-2">
+          3. position: absolute (section-3)
+        </div>
+        <div class="box-static-1">
+          4. position: static
+        </div>
+        <p>absolute-позиционирование выбивает элемент из общего потока. в данном примере
+          мы можем заметить, что элемент под номером 4 скрыт за элементом под номером 3(absolute)
+        </p>
+      </div>
+      <div class="non-static-box" style="position: relative;">
+        <div class="box-static-1">
+          1. position: static
+        </div>
+        <div class="box-relative-1">
+          2. position: relative (без параметров смещения)
+        </div>
+        <div class="box-absolute-3">
+          3. position: absolute (section-3)
+        </div>
+        <div class="box-static-1">
+          4. position: static
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="section-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime sed aliquam assumenda voluptate tempore eos. Est minima impedit perspiciatis eius cumque perferendis rem error accusamus ullam quo tenetur facere aliquam reiciendis porro fugiat, doloremque voluptatem fugit dolorum consequatur voluptate alias adipisci! Velit eveniet laborum earum ab, quisquam excepturi esse quia veritatis dolorem odit asperiores voluptate officia ut, labore iusto unde soluta adipisci id! Voluptatum aut quos impedit aperiam atque maxime earum expedita voluptatibus, quod ratione omnis sunt? Sequi possimus minus repellendus facere non perspiciatis dicta nostrum porro sed! Dignissimos nulla laboriosam enim vitae perferendis quia praesentium ipsam illum esse.</p>
+      <div class="box-fixed-1">
+        position: fixed (section-4)
+      </div>
+      <p>элементы со значением fixed позиционируются относительно границы окна браузера. посмотрите в <b>правый нижний угол</b>,
+        элемент fixed находится там. при скролле страницы он сохраняет свое положение.
+      </p>
+    </div>
+    <hr>
+    <div class="section-5">
+      <div style="width: 150px; height: 200px; background-color: lightblue;">
+        position: static
+      </div>
+      <div class="box-sticky-1">
+        position: sticky
+      </div>
+      <p>значение sticky добавлет элементу "липкость" при прокрутке. я указала значение
+        свойства bottom - 10px, поэтому элемент будет прилипать к левому нижнему углу страницы при прокрутке.
+      </p>
+    </div>
+    <hr>
+    <div class="section-6">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <p>z-index работает только на не-static элементы. это свойство позволяет изменить контекст наложения элементов 
+        на странице. чем выше z-index - тем на более высоком слое будет располагаться элемент.
+      </p>
+      <div class="box-3"></div>
+      <div class="box-4"></div>
+      <p>тут мы изменили значение position у голубого квадрата на relative, чтобы свойство z-index начало работать.
+        установили значение z-index=100, теперь мы видим, что голубой квадрат стал поверх зеленого.
+      </p>
+      <div class="box-5">
+        <div class="box-6"></div>
+      </div>
+      <p>значение z-index родительского элемента передается дочерним, поэтому, если попытаться изменить значение
+        этого свойства у дочернего элемента, то ничего не произойдет. 
+      </p>
+      <div class="box-5">
+        <div class="box-6"></div>
+      </div>
+      <div class="box-7">
+        <div class="box-8"></div>
+      </div>
+      <p>при этом, если у нас есть нескольно элементов со вложенными элементами, то, если увеличить z-index одного
+        из родительских элементов, он вместе со своими дочерними элементами станет поверх других соседних элементов.
+      </p>
+    </div>
   </main>
 </body>
 </html>
