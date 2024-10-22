@@ -1,0 +1,154 @@
+
+/* -----HEADER------------------------------ */
+
+.header{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type:  none;
+}
+
+.menu ul li {
+    padding-left: 15px;
+}
+
+.menu ul li a{
+    display: inline-block;
+    color: #434343;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+/* -------PROMO------------------ */
+
+.wrapper {
+    max-width: 1430px;
+    padding: 0px 45px;
+    margin: 0 auto;
+}
+
+.promo{
+    padding-top:150px ;
+}
+
+.promo__wrap{
+    margin-bottom: 60px;
+    max-width: 550px;
+}
+
+.title {
+    margin: 0;
+    color:#3a3a3a;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 68px;
+}
+
+.promo_title{
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #3a3a3a;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.title_black,
+.subtitle_black{
+    color: #000;
+}
+
+.button {
+    display: flex;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 36px;
+    margin: 10px 0;
+    border: none;
+}
+
+/* ------ABOUT------------------------------------------------- */
+
+.about{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.about__top{
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.about__title{
+    margin-bottom: 24px;
+}    
+
+.about__wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(25%-20px);
+    margin-bottom: 50px;
+}
+
+.card_big{
+    width: calc(50%-20px);
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+.card_big .card__image{
+    height: 370px;
+    
+}
+
+.card__image{
+    width: 100%;
+    height: 420px;
+    margin-bottom: 5px;
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__caption{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card__description{
+    font-size: 18px;
+    color: #434343;
+}
+
+/* -------FOOTER----------------------------------- */
+
+.footer {
+    padding:50px 0px;
+}
+.wrapper {
+}
+.footer__wrap {
+    display: flex;
+    align-items: center;
+}
